@@ -285,10 +285,6 @@ footer .footer__list + p {
   margin-top: 8px;
 } 
 
-/* input[type='checkbox'] {
-  display: none;
-} */
-
 img {
   display: block;
   width: 100%;
