@@ -323,6 +323,7 @@
   display: flex;
 }
 .address-search__input-wrapper > input {
+  height: 64px;
   border: 2px solid var(--color-primary);
   border-right: 0;
   border-radius: 12px 0 0 12px;
@@ -428,7 +429,23 @@
   text-align: center;
 }
 .faq__search {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 36px;
+}
+.faq__search-wrapper {
+  position: relative;
+  width: 384px;
+}
+.faq__search-wrapper input {
+  height: 48px;
+  border-color: var(--color-black);
+  border-radius: 12px;
+}
+.faq__search-wrapper button {
+  position: absolute;
+  top: 12px;
+  right: 20px;
 }
 .faq-wrapper {
   display: flex;
@@ -485,6 +502,9 @@
 .customer__qna form > input,
 .customer__qna form > textarea {
   margin-top: 16px;
+  border: 0;
+  background: var(--color-gray3);
+  border-radius: 6px;
 }
 .customer__qna .btn-wrapper {
   margin-top: 36px;

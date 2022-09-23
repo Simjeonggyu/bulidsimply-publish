@@ -50,6 +50,8 @@
   border-radius: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
+  background: none;
+  outline: none;
 }
 /* ios blue text 제거 */
 :where(button, textarea) {

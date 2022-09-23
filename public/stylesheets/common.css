@@ -197,6 +197,9 @@ main {
 .sprite--reset {
   background-position: -240px -124px;
 }
+.spirte--search {
+  background-position: -336px -124px;
+}
 
 
 /* header */
@@ -256,19 +259,19 @@ footer {
 }
 .footer-wrapper {
   width: 1260px;
-  padding: 0 30px;
+  padding: 0 51px;
   margin: auto;
 }
 footer h1 + p {
-  margin-top: 18px;
+  margin-top: 8px;
 }
 .footer__list {
   display: flex;
-  margin-top: 66px;
+  margin-top: 21px;
 }
 .footer__list + .footer__list {
   margin-top: 8px;
-  padding-bottom: 12px;
+  padding-bottom: 9.5px;
   border-bottom: 0.5px solid #A6ABB5;
 } 
 .footer__list li {
@@ -279,7 +282,7 @@ footer h1 + p {
   margin-left: 8px;
 }
 footer .footer__list + p {
-  margin-top: 36px;
+  margin-top: 8px;
 } 
 
 /* input[type='checkbox'] {
@@ -372,19 +375,20 @@ button {
 input, textarea {
   width: 100%;
 }
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-black);
+}
+textarea {
+  resize: none;
+}
 input[type='checkbox'] {
   display: none;
 }
-.input--large {
-  height: 64px;
-  border-radius: 12px;
-}
-.input--medium {
+input[type='text'],
+input[type='password'] {
   height: 50px;
-  border-radius: 6px;
-}
-.input--small {
-  height: 48px;
+  border: 1px solid var(--color-gray1);
   border-radius: 6px;
 }
 label {
