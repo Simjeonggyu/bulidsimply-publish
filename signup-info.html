@@ -27,48 +27,50 @@
     </div>
   </header>
   <main class="signup-page main--small">
-    <div class="signup__head">
-      <h1 class="heading2">회원가입</h1>
-      <p>약관에 동의해 주세요.</p>
+    <div class="main-wrapper">
+      <div class="signup__head">
+        <h1 class="heading2">회원가입</h1>
+        <p>약관에 동의해 주세요.</p>
+      </div>
+      <ul class="signup__process-list">
+        <li>
+          <span class="sprite sprite--signup-terms sprite--large"></span>
+          <p>약관동의</p>
+        </li>
+        <li>
+          <span class="sprite sprite--signup-auth sprite--large"></span>
+          <p>본인인증</p>
+        </li>
+        <li class="on"> 
+          <span class="sprite sprite--signup-info sprite--large"></span>  
+          <p>정보입력</p>
+        </li>
+        <li>
+          <span class="sprite sprite--signup-complete sprite--large"></span>
+          <p>가입완료</p>
+        </li>
+      </ul>
+      <section class="signup__info">
+        <form name="signupForm" class="signup__form">
+          <label for="signup__id">아이디</label>
+          <div>
+            <input type="text" id="signup__id" class="input--medium" autocomplete="off">
+            <!-- <button>x</button> -->
+          </div>
+          <label for="signup__pw">비밀번호</label>
+          <div>
+            <input type="password" id="signup__pw" class="input--medium" autocomplete="off">
+            <!-- <button>x</button> -->
+          </div>
+          <label for="signup__pw2">비밀번호 확인</label>
+          <div>
+            <input type="password" id="signup__pw2" class="input--medium" autocomplete="off">
+            <!-- <button>x</button> -->
+          </div>
+          <button type="submit" class="btn">가입하기</button>
+        </form>
+      </section>
     </div>
-    <ul class="signup__process-list">
-      <li>
-        <span class="sprite sprite--signup-terms sprite--large"></span>
-        <p>약관동의</p>
-      </li>
-      <li>
-        <span class="sprite sprite--signup-auth sprite--large"></span>
-        <p>본인인증</p>
-      </li>
-      <li class="on"> 
-        <span class="sprite sprite--signup-info sprite--large"></span>  
-        <p>정보입력</p>
-      </li>
-      <li>
-        <span class="sprite sprite--signup-complete sprite--large"></span>
-        <p>가입완료</p>
-      </li>
-    </ul>
-    <section class="signup__info">
-      <form name="signupForm" class="signup__form">
-        <label for="signup__id">아이디</label>
-        <div>
-          <input type="text" id="signup__id" class="input--medium" autocomplete="off">
-          <!-- <button>x</button> -->
-        </div>
-        <label for="signup__pw">비밀번호</label>
-        <div>
-          <input type="password" id="signup__pw" class="input--medium" autocomplete="off">
-          <!-- <button>x</button> -->
-        </div>
-        <label for="signup__pw2">비밀번호 확인</label>
-        <div>
-          <input type="password" id="signup__pw2" class="input--medium" autocomplete="off">
-          <!-- <button>x</button> -->
-        </div>
-        <button type="submit" class="btn">가입하기</button>
-      </form>
-    </section>
   </main>
   <footer>
     <div class="footer-wrapper">

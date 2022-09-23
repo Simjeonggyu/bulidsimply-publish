@@ -1,7 +1,7 @@
 /* color */
 :root {
-  --color-main: #2456D0;
-  --color-sub: #1185F2;
+  --color-primary: #2456D0;
+  --color-secondary: #1185F2;
   --color-black: #3A3C40;
   --color-light-gray: #F6F6F6;
   --color-gray1: #BDBDBD;
@@ -9,8 +9,8 @@
   --color-white: #ffffff;
   --color-border: #F6F6F6;
 }
-.color--main {
-  color: var(--color-main);
+.color--primary {
+  color: var(--color-primary);
 }
 .color--white {
   color: var(--color-white);
@@ -34,6 +34,9 @@ main {
   padding: 120px 30px 436px 30px;
   margin: auto;
   overflow: hidden;
+}
+.main-wrapper {
+  margin: auto;
 }
 .main--medium {
   width: 792px;
@@ -189,6 +192,9 @@ button {
 .on .sprite--signup-complete {
   background-position-y: -580px;
 }
+.sprite--white-search {
+  background-position: -288px -124px;
+}
 
 
 /* header */
@@ -230,7 +236,7 @@ nav > a {
   text-align: center;
 }
 nav > a.active {
-  border-bottom: 2px solid var(--color-main);
+  border-bottom: 2px solid var(--color-primary);
 }
 
 /* footer */
@@ -286,8 +292,25 @@ img {
 /* button */
 .btn-wrapper {
   margin: auto;
+  width: 384px;
   display: flex;
   flex-direction: row;
+}
+.btn-wrapper > div {
+  width: 50%;
+  padding: 0 12px;
+}
+.btn-wrapper--emphasis > div:first-child{
+  width: 146px;
+}
+.btn-wrapper--emphasis > div:last-child{
+  width: 214px;
+}
+.btn-wrapper > div:first-child {
+  padding-left: 0;
+}
+.btn-wrapper > div:last-child {
+  padding-right: 0;
 }
 button {
   padding: 0;
@@ -311,11 +334,18 @@ button {
   color: var(--color-white);
   background-color: var(--color-gray1);
 }
-.btn--main-color {
+.btn--white {
+  color: var(--color-gray1);
+  border: 1px solid var(--color-gray1);
+}
+.btn--primary {
   color: var(--color-white);
-  background-color: var(--color-main);
+  background-color: var(--color-primary);
 }
 .btn--large {
+  width: 384px;
+}
+.btn--medium {
   width: 282px;
 }
 .btn--none {
@@ -327,6 +357,9 @@ button {
 /* input */
 input, textarea {
   width: 100%;
+}
+input[type='checkbox'] {
+  display: none;
 }
 .input--large {
   height: 64px;

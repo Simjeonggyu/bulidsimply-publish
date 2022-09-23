@@ -51,8 +51,8 @@
   border-bottom: 1px solid #DFE1E5;
 }
 .advantage-banner__contents-list li.on {
-  color: var(--color-sub);
-  border: 1px solid var(--color-sub);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
 }
 .process-banner {
   margin-top: 88px;
@@ -68,8 +68,8 @@
   border: 1px solid var(--color-border);
 }
 .process-banner__contents-list li.on {
-  color: var(--color-sub);
-  border: 1px solid var(--color-sub);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
 }
 .process-banner__contents-list li:not(:last-child) {
   margin-right: 24px;
@@ -227,7 +227,7 @@
   color: var(--color-gray2);
 }
 .signup__process-list li.on {
-  color: var(--color-sub);
+  color: var(--color-secondary);
 }
 .signup__process-list li span {
   margin: auto;
@@ -276,15 +276,27 @@
   color: var(--color-gray2);
 }
 .simply-service__process-list li.on p {
-  color: var(--color-sub);
+  color: var(--color-secondary);
 }
-.simply-service-page > section {
+.simply-service-page > div >section {
   margin-top: 36px;
 }
 
 /* address-search */
-.address-search > input {
-  border: 2px solid var(--color-main);
+.address-search__input-wrapper {
+  display: flex;
+}
+.address-search__input-wrapper > input {
+  border: 2px solid var(--color-primary);
+  border-right: 0;
+  border-radius: 12px 0 0 12px;
+}
+.address-search__btn {
+  width: 64px;
+  height: 64px;
+  padding: 20px;
+  background-color: var(--color-primary);
+  border-radius: 0 12px 12px 0;
 }
 .address-search__map {
   margin-top: 36px;
@@ -294,6 +306,34 @@
 }
 
 /* building-use */
+.building-use__list {
+  display: flex;
+  justify-content: space-between;
+}
+.building-use__list li {
+  padding: 24px 24px 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+.building-use__list li.on {
+  border: 1.5px solid var(--color-primary);
+}
+.building-use__list li .img-wrapper {
+  width: 200px;
+  height: 322px;
+}
+.building-use__list li p {
+  margin-top: 8px;
+}
+.building-use .btn-wrapper {
+  margin-top: 36px;
+}
+
+/* service-model-list */
+.service-model-list .btn-wrapper {
+  margin-top: 36px;
+}
 
 /* three-d */
 .three-d {
@@ -418,7 +458,7 @@
   border-bottom: 2px solid var(--color-border);
 }
 .my__category-list li.on {
-  border-bottom: 2px solid var(--color-main);
+  border-bottom: 2px solid var(--color-primary);
 }
 .my__table {
   margin-top: 40px;
