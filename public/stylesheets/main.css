@@ -601,8 +601,8 @@
 .edit-profile__form label {
   margin-top: 18px;
 }
-.edit-profile__info input[type='type'],
-.edit-profile__form input[type='type'] {
+.edit-profile__info input[type='text'],
+.edit-profile__form input[type='password'] {
   margin-top: 9px;
 }
 .edit-profile__btn-wrapper {

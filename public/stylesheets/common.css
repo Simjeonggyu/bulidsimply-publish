@@ -105,7 +105,6 @@ main {
 
 /* icons */
 .sprite {
-  content: '';
   display: block;
   overflow: hidden;
   width: 24px;
@@ -114,6 +113,20 @@ main {
   background-size: 624px 628px;
   text-indent: 101%;
   white-space: nowrap;
+}
+input[type='checkbox'] + label::before {
+  content: '';
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  background: url(../images/sprite.svg) no-repeat;
+  background-size: 624px 628px;
+  background-position: -144px -252px;
+}
+input[type='checkbox']:checked + label::before {
+  background-position-x: -192px;
 }
 .sprite--large {
   width: 48px;
