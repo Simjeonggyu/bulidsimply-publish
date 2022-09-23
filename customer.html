@@ -36,7 +36,7 @@
         </div>
         <div class="faq-wrapper">
           <ul class="faq__category-list">
-            <li>
+            <li class="on">
               <button>
                 <h3>전체보기</h3>
               </button>
@@ -71,15 +71,15 @@
             <ul class="faq__question-list">
               <li>
                 <div><span>1.</span><span>질문제목</span></div>
-                <button></button>
+                <button class="sprite sprite sprite--drop-down">더보기</button>
               </li>
               <li>
                 <div><span>1.</span><span>질문제목</span></div>
-                <button></button>
+                <button class="sprite sprite sprite--drop-down">더보기</button>
               </li>
               <li>
                 <div><span>1.</span><span>질문제목</span></div>
-                <button></button>
+                <button class="sprite sprite sprite--drop-down">더보기</button>
               </li>
             </ul>
           </div>
@@ -91,10 +91,9 @@
           <div class="qna__category-list">
             <h2>문의유형 선택</h2>
             <ul>
-              <li>
+              <li class="on">
                 <input type="checkbox" name="" id="">
                 <div>
-                  <div></div>
                   <h2 class="heading3">서비스 문의</h2>
                   <p>서비스 사용 방법에 대한 문의</p>
                 </div>
@@ -102,7 +101,6 @@
               <li>
                 <input type="checkbox" name="" id="">
                 <div>
-                  <div></div>
                   <h2 class="heading3">제품 문의</h2>
                   <p>제품 정보, 제약 사항 등에 대한 문의</p>
                 </div>
@@ -110,7 +108,6 @@
               <li>
                 <input type="checkbox" name="" id="">
                 <div>
-                  <div></div>
                   <h2 class="heading3">건축 상담 문의</h2>
                   <p>모델 구매 관련 견적서 문의</p>
                 </div>
@@ -137,24 +134,30 @@
             </li>
           </ul>
           <input type="file" name="" id="">
-          <div class="btn-wrapper">
-            <button type="submit" class="btn">문의하기</button>
+          <div class="btn-wrapper btn--small">
+            <button type="submit" class="btn btn--primary">문의하기</button>
           </div>
         </form>
       </section>
       <section class="customer__tel">
-        <a href="" class="a-btn">
-          <h1 class="heading5">건축 상담 문의</h1>
-          <h4 class="heading2">02-000-0000</h4>
-          <p>평일 09:00-18:00 (주말/공휴일 제외)</p>
-          <div></div>
-        </a> 
-        <a href="" class="a-btn">
-          <h1 class="heading5">건축 상담 문의</h1>
-          <h4 class="heading2">02-000-0000</h4>
-          <p>평일 09:00-18:00 (주말/공휴일 제외)</p>
-          <div></div>
-        </a>
+        <div>
+          <a href="">
+            <div>
+              <h1 class="heading5">서비스 문의</h1>
+              <h4 class="heading2">02-000-0000</h4>
+            </div>
+            <p>평일 09:00-18:00 (주말/공휴일 제외)</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <div>
+              <h1 class="heading5">건축 상담 문의</h1>
+              <h4 class="heading2">02-000-0000</h4>
+            </div>
+            <p>평일 09:00-18:00 (주말/공휴일 제외)</p>
+          </a>
+        </div>
       </section>
     </div>
   </main>
