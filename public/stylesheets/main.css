@@ -353,13 +353,15 @@
   display: flex;
   justify-content: space-between;
 }
-.building-use__list li {
+.building-use__list li input[type='radio'] + label {
+  width: 248px;
+  height: 385px;
   padding: 24px 24px 8px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   text-align: center;
 }
-.building-use__list li.on {
+.building-use__list li input[type='radio']:checked + label{
   border: 1.5px solid var(--color-primary);
 }
 .building-use__list li .img-wrapper {
@@ -548,7 +550,7 @@
   display: flex;
   margin-top: 16px;
 }
-.qna__category-list li {
+.qna__category-list li input[type='radio'] + label {
   width: 344px;
   height: 115px;
   padding: 24px;
@@ -556,7 +558,7 @@
   border-radius: 6px;
   margin-right: 24px;
 }
-.qna__category-list li.on {
+.qna__category-list li input[type='radio']:checked + label {
   color: var(--color-secondary);
   border-color: var(--color-secondary);
 }
