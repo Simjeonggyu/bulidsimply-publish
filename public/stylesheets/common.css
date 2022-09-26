@@ -136,6 +136,27 @@ input[type='checkbox']:checked + label::before {
   width: 166px;
   height: 20px;
 }
+.sprite--drop-down {
+  background-position: -240px -60px;
+}
+.sprite--user {
+  background-position: 0 -124px;
+}
+.sprite--alarm {
+  background-position: -48px -124px;
+}
+.sprite--white-search {
+  background-position: -336px -124px;
+}
+.sprite--search {
+  background-position: -384px -124px;
+}
+.sprite--reset {
+  background-position: -48px -188px;
+}
+.sprite--close-circle {
+  background-position: -144px -252px;
+}
 .sprite--uniform {
   background-position: 0 -316px;
 }
@@ -177,12 +198,6 @@ input[type='checkbox']:checked + label::before {
 .sprite--sketch {
   background-position: -216px -404px;
 }
-.on .sprite--address-search,
-.on .sprite--building-use,
-.on .sprite--standard-model,
-.on .sprite--sketch {
-  background-position-y: -580px;
-}
 .sprite--signup-terms {
   background-position: -288px -404px;
 }
@@ -195,31 +210,20 @@ input[type='checkbox']:checked + label::before {
 .sprite--signup-complete {
   background-position: -504px -404px;
 }
+.on .sprite--address-search,
+.on .sprite--building-use,
+.on .sprite--standard-model,
+.on .sprite--sketch,
 .on .sprite--signup-terms,
 .on .sprite--signup-auth,
 .on .sprite--signup-info,
 .on .sprite--signup-complete {
   background-position-y: -580px;
 }
-.sprite--white-search {
-  background-position: -288px -124px;
-}
-.sprite--drop-down {
-  background-position: -240px -60px;
-}
-.sprite--reset {
-  background-position: -240px -124px;
-}
-.sprite--search {
-  background-position: -336px -124px;
-}
 .sprite--plus-circle {
   width: 44px;
   height: 44px;
   background-position: -352px -668px;
-}
-.sprite--close-circle {
-  background-position: -144px -252px;
 }
 
 
@@ -241,7 +245,8 @@ header {
 .header-wrapper > div {
   display: flex;
 }
-header a {
+header a,
+header button {
   display: block;
   margin-top: 35px;
 }
@@ -250,6 +255,15 @@ header a {
 }
 .header__login {
   margin-right: 49px;
+}
+.header__alarm {
+  margin-right: 24px;
+}
+.header__user {
+  display: flex;
+}
+.header__user .sprite--user {
+  margin-right: 6px;
 }
 
 /* nav */
@@ -380,7 +394,9 @@ button {
   width: 282px;
 }
 .btn--small {
-  width: 208px;
+  width: 129px;
+  height: 44px;
+  line-height: 44px;
 }
 .btn--none {
   text-align: left;

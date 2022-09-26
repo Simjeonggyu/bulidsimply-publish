@@ -618,9 +618,8 @@
   text-align: center;
 }
 .my__head a {
-  display: inline;
+  margin: auto;
   margin-top: 15px;
-  width: auto;
 }
 .my__category-list {
   display: flex;
@@ -657,9 +656,7 @@
 .my__btn-wrapper {
   display: flex;
   justify-content: space-between;
-}
-.my__btn-wrapper button {
-  width: auto;
+  margin-top: 36px;
 }
 
 /* edit-profile */
