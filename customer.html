@@ -123,22 +123,29 @@
           <input type="text" name="" id="" placeholder="제목을 입력해 주세요">
           <label for="">문의내용</label>
           <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
-          <label for="">첨부파일</label>
-          <ul>
-            <li>
-              <button>
-                <div></div>
-                <p>Kakao_220803.08.jpg</p>
-              </button>
-            </li>
-            <li>
-              <button>
-                <div></div>
-                <p>Kakao_220803.08.jpg</p>
-              </button>
-            </li>
-          </ul>
-          <input type="file" name="" id="">
+          <h2>첨부파일<span>1개당 최대 5MB</span></h2>
+          <div class="qna__file-wrapper">
+            <ul class="qna__file-list">
+              <li>
+                <button>
+                  <div class="img-wrapper">
+                    <img src="./public/images/model-list.jpg" alt="">
+                  </div>
+                  <p>Kakao_220803.08.jpg</p>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <div class="img-wrapper">
+                    <img src="./public/images/model-list.jpg" alt="">
+                  </div>
+                  <p>Kakao_220803.08.jpg</p>
+                </button>
+              </li>
+            </ul>
+            <input type="file" name="" id="qna-file">
+            <label for="qna-file"><span class="sprite sprite--plus">추가</span></label>
+          </div>
           <div class="btn-wrapper btn--small">
             <button type="submit" class="btn btn--primary">문의하기</button>
           </div>

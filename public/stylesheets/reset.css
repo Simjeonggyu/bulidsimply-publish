@@ -54,6 +54,9 @@
   outline: none;
   color: inherit;
 }
+:where(textarea) {
+  outline: none;
+}
 /* ios blue text 제거 */
 :where(button, textarea) {
   font: inherit;

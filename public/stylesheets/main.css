@@ -568,18 +568,56 @@
 .customer__qna form > label {
   margin-top: 36px;
 }
-.customer__qna form > input,
+.customer__qna form > input[type='text'],
 .customer__qna form > textarea {
   margin-top: 16px;
   border: 0;
   background: var(--color-gray3);
   border-radius: 6px;
 }
-.customer__qna form > input {
+.customer__qna form > input[type='text'] {
   padding: 14px 24px 13px 24px;
 }
 .customer__qna form > textarea {
   padding: 16px 24px;
+}
+.customer__qna h2 > span {
+  margin-left: 8px;
+  color: var(--color-gray1);
+}
+.qna__file-list {
+  display: flex;
+  margin-top: 16px;
+}
+.qna__file-list li {
+  width: 180px;
+  height: 167px;
+  margin-right: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.qna__file-list .img-wrapper {
+  width: 180px;
+  height: 128px;
+}
+.qna__file-list p {
+  width: 180px;
+  padding: 8px 12px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.qna__file-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.customer__qna input[type='file'] + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background: var(--color-gray3);
+  border-radius: 6px;
 }
 .customer__qna .btn-wrapper {
   margin-top: 36px;
