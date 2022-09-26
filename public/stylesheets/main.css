@@ -26,6 +26,8 @@
   height: 342px;
   position: relative;
   margin-right: 24px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .advantage-banner__banner-list__body {
   position: absolute;
@@ -190,6 +192,7 @@
   margin: 12px;
   border: 1px solid var(--color-gray3);
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
 .model-list__img-wrapper {

@@ -412,3 +412,73 @@ input[type='password'] {
 label {
   display: block;
 }
+
+/* modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 1260px;
+  background-color: rgba(58, 60, 64, 0.2);
+}
+.modal > section {
+  background-color: var(--color-white);
+  padding: 24px;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.12);
+}
+.modal--model__head {
+  display: flex;
+  justify-content: space-between;
+}
+.modal--model__body {
+  display: flex;
+  margin-top: 30px;
+}
+.modal--model__body .img-wrapper {
+  width: 622px;
+  height: 350px;
+  margin-right: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.modal--model__contents {
+  position: relative;
+  width: 384px;
+  height: 350px;
+}
+.modal--model__contents .contents__head { 
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--color-gray3);
+}
+.modal--model__contents .contents__info {
+  margin-top: 24px;
+}
+.modal--model__contents table {
+  margin-top: 8px;
+}
+.modal--model__contents table tr:not(:last-child) th,
+.modal--model__contents table tr:not(:last-child) td {
+  padding-bottom: 8px;
+}
+.modal--model__contents table th {
+  box-sizing: content-box;
+  min-width: 6.4rem;
+  padding-right: 8px;
+  text-align: left;
+}
+.modal--model__contents table td {
+  color: var(--color-gray1);
+}
+.modal--model__contents .contents__info tr td:first-of-type {
+  padding-right: 30px;
+}
+.modal--model__contents a {
+  position: absolute;
+  bottom: 0;
+}
