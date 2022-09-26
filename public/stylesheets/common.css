@@ -110,7 +110,7 @@ main {
   width: 24px;
   height: 24px;
   background: url(../images/sprite.svg) no-repeat;
-  background-size: 624px 628px;
+  background-size: 624px 732px;
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -122,11 +122,11 @@ input[type='checkbox'] + label::before {
   height: 24px;
   margin-right: 6px;
   background: url(../images/sprite.svg) no-repeat;
-  background-size: 624px 628px;
-  background-position: -144px -252px;
+  background-size: 624px 732px;
+  background-position: -48px -252px;
 }
 input[type='checkbox']:checked + label::before {
-  background-position-x: -192px;
+  background-position-x: -96px;
 }
 .sprite--large {
   width: 48px;
@@ -174,13 +174,13 @@ input[type='checkbox']:checked + label::before {
 .sprite--standard-model {
   background-position: -144px -404px;
 }
-.sprite--architectural-outline {
+.sprite--sketch {
   background-position: -216px -404px;
 }
 .on .sprite--address-search,
 .on .sprite--building-use,
 .on .sprite--standard-model,
-.on .sprite--architectural-outline {
+.on .sprite--sketch {
   background-position-y: -580px;
 }
 .sprite--signup-terms {
@@ -210,8 +210,16 @@ input[type='checkbox']:checked + label::before {
 .sprite--reset {
   background-position: -240px -124px;
 }
-.spirte--search {
+.sprite--search {
   background-position: -336px -124px;
+}
+.sprite--plus-circle {
+  width: 44px;
+  height: 44px;
+  background-position: -352px -668px;
+}
+.sprite--close-circle {
+  background-position: -144px -252px;
 }
 
 
