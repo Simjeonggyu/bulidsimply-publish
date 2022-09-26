@@ -332,6 +332,7 @@
   border: 2px solid var(--color-primary);
   border-right: 0;
   border-radius: 12px 0 0 12px;
+  padding: 21px 24px 20px 24px;
 }
 .address-search__btn {
   width: 64px;
@@ -503,6 +504,7 @@
   height: 48px;
   border-color: var(--color-black);
   border-radius: 12px;
+  padding: 13px 68px 12px 24px;
 }
 .faq__search-wrapper button {
   position: absolute;
@@ -567,6 +569,12 @@
   border: 0;
   background: var(--color-gray3);
   border-radius: 6px;
+}
+.customer__qna form > input {
+  padding: 14px 24px 13px 24px;
+}
+.customer__qna form > textarea {
+  padding: 16px 24px;
 }
 .customer__qna .btn-wrapper {
   margin-top: 36px;

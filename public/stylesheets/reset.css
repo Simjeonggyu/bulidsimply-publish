@@ -52,6 +52,7 @@
   -webkit-appearance: none;
   background: none;
   outline: none;
+  color: inherit;
 }
 /* ios blue text 제거 */
 :where(button, textarea) {
