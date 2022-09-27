@@ -160,19 +160,8 @@
   display: flex;
   margin-right: 60px;
 }
-.model-filter__list li {
-  width: 164px;
-  height: 50px;
-  padding: 13px 8px 13px 12px;
-  border: 1px solid var(--color-black);
-  border-radius: 6px;
-}
 .model-filter__list li:not(:last-child) {
   margin-right: 24px;
-}
-.model-filter__list li button {
-  display: flex;
-  justify-content: space-between;
 }
 .model-filter__reset {
   display: flex;
@@ -436,7 +425,7 @@
   height: 529px;
   overflow: hidden;
 }
-.sketch__contents-list li {
+.sketch__contents-list > li {
   /* overflow-y: scroll; */
   height: 529px;
 }
@@ -484,8 +473,8 @@
 .sketch__floor .floor__select {
   border: 0;
 }
-.floor__select button {
-  width: 90px;
+.sketch__contents-list .sketch__floor .floor__info {
+  margin-top: 50px;
 }
 .regulations__scale tr td:first-of-type,
 .regulations__line tr td:first-of-type {

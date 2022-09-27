@@ -48,6 +48,7 @@
 :where(input) {
   font: inherit;
   border-radius: 0;
+  margin: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
   background: none;
