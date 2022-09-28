@@ -3,6 +3,9 @@
 @import url(common.css);
 
 /* index */
+.index-page .main-wrapper > section:not(:first-child) {
+  margin-top: 160px;
+}
 .service-banner__img-wrapper {
   height: 496px;
   position: relative;
@@ -19,7 +22,6 @@
 }
 .advantage-banner {
   display: flex;
-  margin-top: 88px;
 }
 .advantage-banner__img-wrapper {
   width: 894px;
@@ -62,12 +64,9 @@
   border: 1px solid var(--color-secondary);
   z-index: 10;
 }
-.process-banner {
-  margin-top: 88px;
-}
 .process-banner__contents-list {
   display: flex;
-  margin-top: 24px;
+  margin-top: 36px;
 }
 .process-banner__contents-list li {
   width: 282px;
@@ -91,21 +90,23 @@
   margin-top: 2px;
 }
 .process-banner__img-wrapper {
-  margin-top: 24px;
+  margin-top: 36px;
   height: 480px;
-}
-.main-service {
-  margin-top: 88px;
 }
 .main-service h1 {
   text-align: center;
+}
+.main-service__list {
+  margin-top: 36px;
 }
 .main-service__list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 48px;
   height: 328px;
+}
+.main-service__list li:not(:first-child) {
+  margin-top: 120px;
 }
 .main-service__list span {
   padding: 5px 11px;
@@ -117,14 +118,18 @@
   margin-top: 18px;
 }
 .recommend-model {
-  margin-top: 122px;
   overflow: hidden;
 }
 .recommend-model h1 {
   text-align: center;
 }
+.recommend-model__more {
+  margin-top: 8px; 
+  display: flex;
+  justify-content: flex-end;
+}
 .recommend-model__list {
-  margin-top: 24px;
+  margin-top: 36px;
   /* 추후삭제 */
   display: flex;
   margin-left: -384px;
@@ -142,10 +147,6 @@
   position: absolute;
   top: 226px;
   left: 38px;
-}
-.recommend-model a {
-  margin: auto;
-  margin-top: 24px; 
 }
 
 /* model-list */
