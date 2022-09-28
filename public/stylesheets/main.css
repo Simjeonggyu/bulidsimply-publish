@@ -311,7 +311,7 @@
 .simply-service__process-list li.on p {
   color: var(--color-secondary);
 }
-.simply-service-page > div >section {
+.simply-service-page > div:first-child > section {
   margin-top: 36px;
 }
 
@@ -325,6 +325,7 @@
   border-right: 0;
   border-radius: 12px 0 0 12px;
   padding: 21px 24px 20px 24px;
+  outline: none;
 }
 .address-search__btn {
   width: 64px;
@@ -481,6 +482,54 @@
   padding-right: 30px;
 }
 
+/* export */
+.export__header {
+  display: flex;
+  justify-content: space-between;
+}
+.export__list {
+  display: flex;
+  margin-top: 24px;
+}
+.export__list li:not(:last-child) {
+  margin-right: 24px;
+}
+.export__list li {
+  text-align: center;
+}
+.export__list li p {
+  margin-top: 13px;
+}
+.export__target-list {
+  width: 384px;
+  margin-top: 36px;
+}
+.export__target-list li {
+  margin-bottom: 16px;
+}
+.target-list--message li {
+  position: relative;
+}
+.target-list--message span {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  width: 44px;
+  height: 24px;
+  background-color: var(--color-gray3);
+  text-align: center;
+  border-radius: 30px;
+}
+.target-list--message input {
+  padding-left: 60px;
+}
+.modal--export .sprite--plus {
+  margin: auto;
+}
+.modal--export .btn-wrapper {
+  margin-top: 24px;
+}
+
 /* customer */
 .faq__head {
   text-align: center;
@@ -499,6 +548,7 @@
   border-color: var(--color-black);
   border-radius: 12px;
   padding: 13px 68px 12px 24px;
+  outline: none;
 }
 .faq__search-wrapper button {
   position: absolute;

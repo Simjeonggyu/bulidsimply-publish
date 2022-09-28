@@ -138,6 +138,10 @@ input[type='checkbox']:checked + label::before {
   width: 48px;
   height: 48px;
 }
+.sprite--xlarge {
+  width: 64px;
+  height: 64px;
+}
 .sprite--logo {
   width: 166px;
   height: 20px;
@@ -145,6 +149,9 @@ input[type='checkbox']:checked + label::before {
 .btn--drop-down::after,
 .sprite--drop-down {
   background-position: -240px -60px;
+}
+.sprite--close {
+  background-position: -288px -60px;
 }
 .sprite--plus {
   background-position: -336px -60px;
@@ -232,6 +239,18 @@ input[type='checkbox']:checked + label::before {
 .on .sprite--signup-info,
 .on .sprite--signup-complete {
   background-position-y: -580px;
+}
+.sprite--pdf {
+  background-position: 0 -668px;
+}
+.sprite--kakao {
+  background-position: -88px -668px;
+}
+.sprite--email {
+  background-position: -176px -668px;
+}
+.sprite--message {
+  background-position: -264px -668px;
 }
 .sprite--plus-circle {
   width: 44px;
@@ -356,10 +375,10 @@ img {
   padding: 0 12px;
 }
 .btn-wrapper--emphasis > div:first-child{
-  width: 146px;
+  width: 158px;
 }
 .btn-wrapper--emphasis > div:last-child{
-  width: 214px;
+  width: 226px;
 }
 .btn-wrapper > div:first-child {
   padding-left: 0;
@@ -423,7 +442,7 @@ input, textarea {
 }
 input::placeholder,
 textarea::placeholder {
-  color: var(--color-black);
+  color: var(--color-gray1);
 }
 textarea {
   resize: none;
@@ -521,7 +540,6 @@ input[type="file"] {
 }
 
 /* drop-down */
-
 .drop-down {
   position: relative;
   width: 100%;
