@@ -323,7 +323,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 52px;
+  padding-top: 51px;
   min-width: 1260px;
   height: 316px;
   color: var(--color-gray3);
@@ -331,7 +331,7 @@ footer {
 }
 .footer-wrapper {
   width: 1260px;
-  padding: 0 51px;
+  padding: 0 30px;
   margin: auto;
 }
 .footer-link-list {
@@ -347,7 +347,7 @@ footer {
 }
 .footer__list + .footer__list {
   margin-top: 8px;
-  padding-bottom: 9.5px;
+  padding-bottom: 8px;
   border-bottom: 0.5px solid #A6ABB5;
 } 
 .footer__list li {
@@ -458,6 +458,10 @@ input:disabled {
   background-color: var(--color-gray3);
 }
 textarea {
+  padding: 16px 24px;
+  border: 0;
+  background: var(--color-gray3);
+  border-radius: 6px;
   resize: none;
 }
 input[type='checkbox'] {
@@ -562,10 +566,15 @@ input[type="file"] {
 }
 .drop-down--menu {
   position: absolute;
-  width: 90px;
   border: 1px solid var(--color-black);
   border-radius: 6px;
   overflow: hidden;
+}
+.floor__select .drop-down--menu {
+  width: 90px;
+}
+.modal--secession .drop-down--menu {
+  width: 384px;
 }
 .drop-down__btn {
   display: flex;

@@ -613,15 +613,12 @@
 .customer__qna form > input[type='text'],
 .customer__qna form > textarea {
   margin-top: 16px;
-  border: 0;
-  background: var(--color-gray3);
-  border-radius: 6px;
 }
 .customer__qna form > input[type='text'] {
   padding: 14px 24px 13px 24px;
-}
-.customer__qna form > textarea {
-  padding: 16px 24px;
+  border: 0;
+  background: var(--color-gray3);
+  border-radius: 6px;
 }
 .customer__qna h2 > span {
   margin-left: 8px;
@@ -831,4 +828,26 @@
 .find-id-pw__login {
   margin-top: 36px;
   text-align: center;
+}
+/* secession */
+.modal--secession {
+  width: 432px;
+}
+.secession__head {
+  text-align: center;
+}
+.secession__head p {
+  margin-top: 16px;
+}
+.modal--secession label {
+  margin-top: 36px;
+}
+.modal--secession .drop-down {
+  margin-top: 16px;
+}
+.modal--secession textarea {
+  margin-top: 82px;
+}
+.modal--secession .btn-wrapper {
+  margin-top: 36px;
 }
