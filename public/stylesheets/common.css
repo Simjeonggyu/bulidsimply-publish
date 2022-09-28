@@ -444,6 +444,10 @@ input::placeholder,
 textarea::placeholder {
   color: var(--color-gray1);
 }
+input:disabled {
+  color: var(--color-gray1);
+  background-color: var(--color-gray3);
+}
 textarea {
   resize: none;
 }
@@ -649,4 +653,26 @@ input[type="file"] {
 }
 .drop-down--menu .drop-down__contents button:hover {
   background-color: rgba(223, 225, 229, 0.3);
+}
+
+/* file-list */
+.file-list {
+  display: flex;
+}
+.file-list li {
+  width: 180px;
+  height: 180px;
+  margin-right: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.file-list .img-wrapper {
+  width: 180px;
+  height: 141px;
+}
+.file-list p {
+  width: 180px;
+  padding: 8px 12px;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
