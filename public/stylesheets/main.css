@@ -510,7 +510,9 @@
 .target-list--message li {
   position: relative;
 }
-.target-list--message span {
+.target-list--message li::before {
+  content: '010';
+  display: block;
   position: absolute;
   top: 13px;
   left: 8px;
