@@ -12,6 +12,9 @@
 .color--primary {
   color: var(--color-primary);
 }
+.color--secondary {
+  color: var(--color-secondary);
+}
 .color--white {
   color: var(--color-white);
 }
@@ -71,6 +74,10 @@ main {
 .heading5 {
   font-size: 2.4rem;
   font-weight: 400;
+}
+.heading6 {
+  font-size: 2.1rem;
+  font-weight: 700;
 }
 .body1 {
   font-size: 1.6rem;
@@ -146,18 +153,24 @@ input[type='checkbox']:checked + label::before {
   width: 166px;
   height: 20px;
 }
-.sprite--blue-right-arrow {
+.sprite--left-arrow {
+  background-position: -192px -60px;
+}
+.sprite--right-arrow {
   background-position: -240px -60px;
+}
+.sprite--blue-right-arrow {
+  background-position: -288px -60px;
 }
 .btn--drop-down::after,
 .sprite--drop-down {
-  background-position: -336px -60px;
-}
-.sprite--close {
   background-position: -384px -60px;
 }
-.sprite--plus {
+.sprite--close {
   background-position: -432px -60px;
+}
+.sprite--plus {
+  background-position: -480px -60px;
 }
 .sprite--user {
   background-position: 0 -124px;
@@ -512,7 +525,7 @@ input[type="file"] {
 }
 .modal--model__body {
   display: flex;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 .modal--model__body .img-wrapper {
   width: 622px;
@@ -694,4 +707,26 @@ input[type="file"] {
   padding: 8px 12px;
   background-color: var(--color-black);
   color: var(--color-white);
+}
+
+/* pagination */
+.pagination-wrapper,
+.pagination {
+  display: flex;
+}
+.pagination-wrapper {
+  justify-content: center;
+  margin-top: 36px;
+}
+.pagination {
+  margin: 0 24px;
+}
+.pagination li:not(:last-child) {
+  margin-right: 24px;
+}
+.pagination li {
+  color: var(--color-gray2);
+}
+.pagination li.on {
+  color: var(--color-black);
 }

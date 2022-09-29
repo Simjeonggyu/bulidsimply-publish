@@ -15,10 +15,10 @@
   top: 148px
 }
 .service-banner__body p {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 .service-banner__body a {
-  margin-top: 59px;
+  margin-top: 52px;
 }
 .advantage-banner {
   display: flex;
@@ -38,7 +38,7 @@
 }
 .advantage-banner__banner-list__body p {
   width: 369px;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 .advantage-banner__contents-list li {
   display: flex;
@@ -115,7 +115,7 @@
 }
 .main-service__list li h2,
 .main-service__list li p {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 .recommend-model {
   overflow: hidden;
@@ -161,7 +161,7 @@
   display: flex;
   margin-right: 60px;
 }
-.model-filter__list li:not(:last-child) {
+.model-filter__list > li:not(:last-child) {
   margin-right: 24px;
 }
 .model-filter__reset {
@@ -210,19 +210,32 @@
 .login__form {
   margin-top: 36px;
 }
+.login__form label:not(:first-child) {
+  margin-top: 16px;
+}
 .login__form input {
-  margin: 9px 0 18px;
+  margin-top: 8px;
 }
 .login__sub {
   display: flex;
   justify-content: space-between;
   margin-top: 36px;
 }
+.login__sub__find-wrapper {
+  display: flex;
+  align-items: center;
+}
+.login__sub__find-wrapper > div {
+  width: 1px;
+  height: 16px;
+  margin: 0 8px;
+  background-color: var(--color-black);
+}
 .login__btn-wrapper {
   margin-top: 36px;
 }
 .login__btn-wrapper button:last-child {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .login__signup {
   margin-top: 36px;
@@ -265,6 +278,7 @@
 }
 .signup__terms-list li{
   display: flex;
+  justify-content: space-between;
 }
 .signup__terms-list li:first-child {
   padding-bottom: 24px;
@@ -278,10 +292,10 @@
   margin-top: 36px;
 }
 .signup__form label:not(:first-child) {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 .signup__form input {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .signup__form button {
   margin-top: 36px;
@@ -299,7 +313,8 @@
 }
 .simply-service__process-list li {
   width: 78px;
-  height: 80px;
+  height: 92px;
+  padding: 11px 0 6px 0;
   text-align: center;
 }
 .simply-service__process-list li span {
@@ -423,17 +438,17 @@
 .sketch__contents-category-list li.active {
   border-bottom: 2px solid #2456D0;
 }
-.sketch__contents-list {
+/* .sketch__contents-list {
   height: 529px;
   overflow: hidden;
-}
+} */
 .sketch__contents-list > li {
   /* overflow-y: scroll; */
-  height: 529px;
+  height: 515px;
 }
 .sketch__body .btn-wrapper {
   background-color: var(--color-white);
-  padding-top: 10px;
+  padding-top: 8px;
 }
 .sketch__contents-list section {
   margin-top: 8px;
@@ -468,9 +483,10 @@
   position: relative;
 }
 .synopsys__head__more {
+  display: flex;
   position: absolute;
   top: 11px;
-  right: 40px;
+  right: 11px;
 }
 .sketch__floor .floor__select {
   border: 0;
@@ -582,6 +598,9 @@
 .faq__question-list li > div > span:first-child {
   margin-right: 24px;
 }
+.faq__question-list-wrapper .pagination-wrapper {
+  padding-right: 204px;
+}
 .customer__qna {
   margin-top: 88px;
 }
@@ -607,7 +626,11 @@
   color: var(--color-secondary);
   border-color: var(--color-secondary);
 }
-.customer__qna form > label {
+.qna__category-list li p {
+  margin-top: 8px;
+}
+.customer__qna form > label,
+.qna__file__head {
   margin-top: 36px;
 }
 .customer__qna form > input[type='text'],
@@ -674,8 +697,16 @@
 }
 
 /* my-page */
-.my__head {
-  text-align: center;
+.my__head h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my__head h1 > div {
+  width: 1px;
+  height: 24px;
+  margin: 0 12px;
+  background-color: var(--color-black);
 }
 .my__head a {
   margin: auto;
@@ -783,18 +814,18 @@
   text-align: center;
 }
 .edit-profile__head p {
-  margin-top: 13px;
+  margin-top: 8px;
 }
 .edit-profile__info {
   margin-top: 36px;
 }
 .edit-profile__info label:not(:first-child),
 .edit-profile__form label {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 .edit-profile__info input[type='text'],
 .edit-profile__form input[type='password'] {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .edit-profile__btn-wrapper {
   margin-top: 36px;
@@ -825,16 +856,16 @@
   margin-top: 36px;
 }
 .find-id-pw__form label:not(:first-child) {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 .find-id-pw__form input {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .find-id-pw__form button {
   margin-top: 36px;
 }
 .find-id-pw > .main-wrapper > a {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .find-id-pw__login {
   margin-top: 36px;
@@ -848,6 +879,7 @@
   text-align: center;
 }
 .secession__head p {
+  margin: 16px 23px 0 23px;
   margin-top: 16px;
 }
 .modal--secession label {
@@ -857,7 +889,7 @@
   margin-top: 16px;
 }
 .modal--secession textarea {
-  margin-top: 82px;
+  margin-top: 83px;
 }
 .modal--secession .btn-wrapper {
   margin-top: 36px;

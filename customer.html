@@ -32,7 +32,7 @@
   <main class="customer-page">
     <div class="main-wrapper">
       <section class="customer__faq">
-        <h1 class="heading5 faq__head">자주 하는 질문</h1>
+        <h1 class="heading3 faq__head">자주 하는 질문</h1>
         <div class="faq__search">
           <div class="faq__search-wrapper">
             <input type="text" name="" id="" class="input--small">
@@ -75,45 +75,56 @@
           <div class="faq__question-list-wrapper">
             <ul class="faq__question-list">
               <li>
-                <div><span>1.</span><span>질문제목</span></div>
+                <div><span class="body1 color--secondary">01</span><span>질문제목</span></div>
                 <button class="sprite sprite sprite--drop-down">더보기</button>
               </li>
               <li>
-                <div><span>1.</span><span>질문제목</span></div>
+                <div><span class="body1 color--secondary">02</span><span>질문제목</span></div>
                 <button class="sprite sprite sprite--drop-down">더보기</button>
               </li>
               <li>
-                <div><span>1.</span><span>질문제목</span></div>
+                <div><span class="body1 color--secondary">03</span><span>질문제목</span></div>
                 <button class="sprite sprite sprite--drop-down">더보기</button>
               </li>
             </ul>
+            <div class="pagination-wrapper">
+              <button class="pagination__left-btn sprite sprite--left-arrow"></button>
+              <ul class="pagination">
+                <li class="on"><button>1</button></li>
+                <li><button>2</button></li>
+                <li><button>3</button></li>
+                <li><button>4</button></li>
+                <li><button>5</button></li>
+              </ul>
+              <button class="pagination__right-btn sprite sprite--right-arrow"></button>
+            </div>
           </div>
         </div>
       </section>
       <section class="customer__qna">
-        <h1 class="heading5 qna__head">1:1 문의하기</h1>
+        <h1 class="heading3 qna__head">1:1 문의하기</h1>
         <form action="">
           <div class="qna__category-list">
             <h2>문의유형 선택</h2>
             <ul>
               <li>
-                <input type="radio" name="qna-category" id="qna__service">
+                <input type="radio" name="qna-category" id="qna__service" checked>
                 <label for="qna__service">
-                  <h2 class="heading3">서비스 문의</h2>
+                  <h2 class="heading6">서비스 문의</h2>
                   <p>서비스 사용 방법에 대한 문의</p>
                 </label>
               </li>
               <li>
                 <input type="radio" name="qna-category" id="qna__product">
                 <label for="qna__product">
-                  <h2 class="heading3">제품 문의</h2>
+                  <h2 class="heading6">제품 문의</h2>
                   <p>제품 정보, 제약 사항 등에 대한 문의</p>
                 </label>
               </li>
               <li>
                 <input type="radio" name="qna-category" id="qna__construct">
                 <label for="qna__construct">
-                  <h2 class="heading3">건축 상담 문의</h2>
+                  <h2 class="heading6">건축 상담 문의</h2>
                   <p>모델 구매 관련 견적서 문의</p>
                 </label>
               </li>
@@ -123,7 +134,7 @@
           <input type="text" name="" id="" placeholder="제목을 입력해 주세요">
           <label for="">문의내용</label>
           <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
-          <h2>첨부파일<span>1개당 최대 5MB</span></h2>
+          <h2 class="qna__file__head">첨부파일<span>1개당 최대 5MB</span></h2>
           <div class="qna__file-wrapper">
             <input type="file" name="" id="qna-file">
             <label for="qna-file"><span class="sprite sprite--plus">추가</span></label>
@@ -146,7 +157,7 @@
               </li>
             </ul>
           </div>
-          <div class="btn-wrapper btn--small">
+          <div class="btn-wrapper btn--medium">
             <button type="submit" class="btn btn--primary">문의하기</button>
           </div>
         </form>
