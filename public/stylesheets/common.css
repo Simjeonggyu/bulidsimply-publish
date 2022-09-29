@@ -166,10 +166,10 @@ input[type='checkbox']:checked + label::before {
   background-position: -48px -124px;
 }
 .sprite--white-search {
-  background-position: -336px -124px;
+  background-position: -240px -124px;
 }
 .sprite--search {
-  background-position: -384px -124px;
+  background-position: -288px -124px;
 }
 .sprite--down-load {
   background-position: 0 -188px;
@@ -464,7 +464,8 @@ textarea {
   border-radius: 6px;
   resize: none;
 }
-input[type='checkbox'] {
+input[type='checkbox'],
+input[type='radio'] {
   display: none;
 }
 input[type='text'],

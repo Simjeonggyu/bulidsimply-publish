@@ -295,7 +295,7 @@
   display: flex;
   justify-content: space-between;
   width: 384px;
-  margin: 40px auto 0 auto;
+  margin: 36px auto 0 auto;
 }
 .simply-service__process-list li {
   width: 78px;
@@ -635,6 +635,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
   width: 64px;
   height: 64px;
   background: var(--color-gray3);
@@ -693,27 +694,32 @@
 .my__category-list li.on {
   border-bottom: 2px solid var(--color-primary);
 }
-.my__table {
-  margin-top: 40px;
+.my__list {
+  margin-top: 36px;
 }
-.my__inquiry-list .inquiry-list__head {
+.my__inquiry-list .inquiry-list__head,
+.my__usage-list .usage-list-wrapper {
   display: flex;
   align-items: center;
   height: 54px;
   padding: 0 30px;
   border-bottom: 1px solid var(--color-gray2);
 }
-.my__inquiry-list li:first-child .inquiry-list__head {
+.my__inquiry-list li:first-child .inquiry-list__head,
+.my__usage-list li:first-child .usage-list-wrapper {
   border-bottom: 1px solid var(--color-gray1);
 }
-.my__inquiry-list .inquiry-list__head span {
+.my__inquiry-list .inquiry-list__head span,
+.my__usage-list li span {
   display: block;
 }
-.my__inquiry-list .inquiry-list__head span:not(:last-child) {
+.my__inquiry-list .inquiry-list__head span:not(:last-child),
+.my__usage-list li span:not(:last-child) {
   margin-right: 24px;
 }
-.my__inquiry-list .inquiry-list__head span:first-child {
-  width: 66px;
+.my__inquiry-list .inquiry-list__head span:first-child,
+.my__usage-list li span:first-child  {
+  width: 24px;
 }
 .my__inquiry-list .inquiry-list__head span:nth-child(2) {
   width: 458px;
@@ -725,12 +731,27 @@
 .my__inquiry-list .inquiry-list__head span:nth-child(5) {
   width: 168px;
 }
+.my__usage-list li span:nth-child(2) {
+  width: 298px;
+}
+.my__usage-list li span:nth-child(3) {
+  width: 95px;
+}
+.my__usage-list li span:nth-child(4) {
+  width: 402px;
+}
+.my__usage-list li span:nth-child(5) {
+  width: 142px;
+}
+.my__usage-list .sprite--down-load {
+  margin-left: 18px;
+}
 .inquiry-list__body {
   background-color: var(--color-gray3);
   padding: 0 68px;
 }
 .inquiry-list__body > div {
-  padding: 24px 52px;
+  padding: 24px 10px;
 }
 .inquiry-list__body > div:not(:first-child) {
   border-top: 1px solid var(--color-gray2);
@@ -745,26 +766,16 @@
 .inquiry-list__body__answer p {
   margin-top: 24px;
 }
-.my__table table {
-  width: 100%;
-}
-.my__table tr {
-  height: 54px;
-}
-.my__table thead tr {
-  border-bottom: 1px solid var(--color-gray1);
-}
-.my__table tbody tr {
-  border-bottom: 1px solid var(--color-gray2);
-}
-.my__table th,
-.my__table td {
-  vertical-align: middle;
-}
 .my__btn-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 36px;
+}
+.my__btn-wrapper label {
+  margin-left: 30px;
+}
+.my__btn-wrapper input[type='checkbox'] + label::before  {
+  margin-right: 24px;
 }
 
 /* edit-profile */
