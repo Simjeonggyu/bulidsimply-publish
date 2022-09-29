@@ -190,6 +190,9 @@ input[type='checkbox']:checked + label::before {
 .sprite--reset {
   background-position: -48px -188px;
 }
+.sprite--check {
+  background-position: -96px -252px;
+}
 .sprite--close-circle {
   background-position: -144px -252px;
 }

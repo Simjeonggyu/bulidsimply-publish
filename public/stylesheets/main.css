@@ -894,3 +894,39 @@
 .modal--secession .btn-wrapper {
   margin-top: 36px;
 }
+
+/* estimate */
+.modal--estimate {
+  width: 375px;
+}
+.estimate__header {
+  display: flex;
+  justify-content: space-between;
+}
+.estimate__body {
+  margin-top: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-gray3);
+}
+.estimate__list-wrapper {
+  display: flex;
+  margin-left: 12px;
+}
+.estimate__list-wrapper > span {
+  margin-right: 8px;
+}
+.estimate__list-wrapper > h3 {
+  margin-right: 35px;
+}
+.estimate__list li:not(:last-child):after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 30px;
+  margin: 6px 22px;
+  background-color: var(--color-primary);
+}
+.estimate__final {
+  margin-top: 16px;
+  text-align: end;
+}
