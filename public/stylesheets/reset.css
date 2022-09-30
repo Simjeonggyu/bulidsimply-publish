@@ -53,6 +53,16 @@
   -webkit-appearance: none;
   background: none;
   color: inherit;
+  outline: none;
+}
+/* ios input icon 제거 */
+input::-webkit-credentials-auto-fill-button,
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
 :where(textarea) {
   outline: none;
@@ -61,6 +71,13 @@
 :where(button, textarea) {
   font: inherit;
   color: inherit;
+}
+:where(button) {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  margin: 0;
 }
 /* 클릭 하이라이트 제거 */
 :where(a, button, input) {
