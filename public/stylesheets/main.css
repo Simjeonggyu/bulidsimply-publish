@@ -458,7 +458,8 @@
 }
 .sketch__contents-list > li {
   overflow-y: scroll;
-  height: 523px;
+  height: 515px;
+  margin-top: 8px;
   scrollbar-color: var(--color-gray1) transparent;
 }
 .sketch__contents-list > li::-webkit-scrollbar {
@@ -474,9 +475,6 @@
 .sketch__body .btn-wrapper {
   padding-top: 8px;
   background-color: var(--color-white);
-}
-.sketch__contents-list section {
-  margin-top: 8px;
 }
 .sketch__contents-list section > div {
   padding-bottom: 12px;
