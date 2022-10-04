@@ -48,6 +48,7 @@
   height: 114px;
   padding: 0 40px;
   border: 1px solid var(--color-gray2);
+  color: var(--color-gray2);
 }
 .advantage-banner__contents-list li:first-child {
   border-radius: 12px 12px 0 0;
@@ -72,7 +73,8 @@
   width: 282px;
   height: 96px;
   padding: 0 20px 0 24px;
-  border: 1px solid var(--color-gray2);
+  border: 1px solid var(--color-gray1);
+  color: var(--color-gray1);
 }
 .process-banner__contents-list li.on {
   color: var(--color-secondary);
@@ -616,6 +618,7 @@
   border-bottom: 1px solid var(--color-gray2);
 }
 .faq__question__head > div > span:first-child {
+  width: 22px;
   margin-right: 8px;
 }
 .faq__question__body {
@@ -748,6 +751,7 @@
   height: 47px;
   text-align: center;
   border-bottom: 2px solid var(--color-gray3);
+  color: var(--color-gray1);
 }
 .my__category-list li.on {
   border-color: var(--color-primary);
@@ -878,6 +882,7 @@
   height: 47px;
   border-bottom: 2px solid var(--color-gray3);
   text-align: center;
+  color: var(--color-gray1);
 }
 .find-id-pw__category-list li.on {
   border-bottom: 2px solid var(--color-primary);
