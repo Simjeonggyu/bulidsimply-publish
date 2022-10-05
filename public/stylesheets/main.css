@@ -340,16 +340,19 @@
 
 /* address-search */
 .address-search__input-wrapper {
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+}
+.address-search__input-wrapper > div {
   display: flex;
 }
-.address-search__input-wrapper > input {
+.address-search__input-wrapper > div > input {
   height: 64px;
   padding: 21px 24px 20px 24px;
-  border: 2px solid var(--color-primary);
-  border-right: 0;
-  border-radius: 12px 0 0 12px;
+  border: none;
 }
-.address-search__input-wrapper > input:focus {
+.address-search__input-wrapper > div > input:focus {
   border-color: var(--color-primary);
   box-shadow: none;
 }
@@ -358,7 +361,17 @@
   height: 64px;
   padding: 20px;
   background-color: var(--color-primary);
-  border-radius: 0 12px 12px 0;
+}
+.address-search__result-list {
+  border-top: 2px solid var(--color-primary);
+}
+.address-search__result-list button {
+  width: 100%;
+  padding: 8px 24px;
+  text-align: left;
+}
+.address-search__result-list button:hover {
+  background: rgba(223, 225, 229, 0.3);
 }
 .address-search__map {
   margin-top: 36px;
