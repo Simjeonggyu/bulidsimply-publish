@@ -339,17 +339,25 @@
 }
 
 /* address-search */
+.address-search {
+  position: relative;
+}
 .address-search__input-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
   border: 2px solid var(--color-primary);
   border-radius: 12px;
+  background-color: var(--color-white);
 }
 .address-search__input-wrapper > div {
   display: flex;
 }
 .address-search__input-wrapper > div > input {
   height: 64px;
-  padding: 21px 24px 20px 24px;
+  padding: 20px 24px;
   border: none;
 }
 .address-search__input-wrapper > div > input:focus {
@@ -374,7 +382,9 @@
   background: rgba(223, 225, 229, 0.3);
 }
 .address-search__map {
-  margin-top: 36px;
+  width: 792px;
+  height: 440px;
+  padding-top: 100px;
 }
 .address-search a {
   margin-top: 36px;
